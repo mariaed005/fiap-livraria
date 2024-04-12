@@ -28,5 +28,8 @@ public class CriarLivros {
         //System.out.println("\n\nTitulo: " + meuLivro.titulo);
         //System.out.println("Autor: " + meuLivro.autor);
         System.out.println(meuLivro.exibirDados());
+
+        LivroDigital livroDigital = new LivroDigital();
+        //livroDigital.
     }
 }

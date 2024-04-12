@@ -2,7 +2,7 @@ public class Livro {
 
     //---ATRIBUTOS ---///
     //+ (public) TipoDado nomeAtributoOuVariavel
-    private String titulo;
+    protected String titulo;
     private String autor;
     private double valor;
     private Editora editora;
@@ -23,6 +23,12 @@ public class Livro {
                 "\nEditora:" + this.editora.nome +
                 "\n---------------" ;               ;
         return dados;
+    }
+
+    public double aplicarDesconto(){
+        if(tipoCapa.equals(TipoCapaEnum.COMUM))
+            return valor * 0.95;
+        return 0;
     }
     public Livro(String titulo){
         this.titulo = titulo;
