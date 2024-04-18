@@ -1,10 +1,10 @@
-public class Livro {
+public abstract class Livro {
 
     //---ATRIBUTOS ---///
     //+ (public) TipoDado nomeAtributoOuVariavel
     protected String titulo;
     private String autor;
-    private double valor;
+    protected double valor;
     private Editora editora;
     private int paginas;
     private String resumo;
