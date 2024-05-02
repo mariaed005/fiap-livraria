@@ -1,3 +1,5 @@
+package models;
+
 public class LivroDigital extends Livro {
     private String marcaDagua;
     public String getMarcaDagua() {
@@ -11,15 +13,13 @@ public class LivroDigital extends Livro {
         this.marcaDagua = marcaDagua;
     }
 
-    public LivroDigital() {
-        setTipoCapa(TipoCapaEnum.COMUM);
-    }
+
 
     public LivroDigital(String titulo, String autor,
                         double valor, Editora editora,
                         int paginas, String resumo,
-                        TipoCapaEnum tipoCapa, String marcaDagua) {
-        super(titulo, autor, valor, editora, paginas, resumo, tipoCapa);
+                         String marcaDagua) {
+        super(titulo, autor, valor, editora, paginas, resumo);
         this.marcaDagua = marcaDagua;
     }
     @Override

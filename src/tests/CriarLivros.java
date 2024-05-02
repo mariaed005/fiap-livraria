@@ -1,9 +1,17 @@
+package tests;
+
+import models.Editora;
+import models.LivroDigital;
+import models.LivroFisico;
+import models.RegistroVendas;
+import models.enums.TipoCapaEnum;
+
 //Classe de execução => main
 public class CriarLivros {
     public static void main(String[] args) {
         //Instanciando um objeto => criar o objeto na memória
         // tipoObjeto nomeObjeto = operadorInstanciação  construtor;
-        //   Livro      favorito =       new               Livro();
+        //   models.Livro      favorito =       new               models.Livro();
         //Instanciar editora
         Editora editora = new Editora();
         editora.nome = "Harper Collins";
@@ -29,9 +37,14 @@ public class CriarLivros {
         //System.out.println("Autor: " + meuLivro.autor);
         System.out.println(meuLivro.exibirDados());
 
-        LivroDigital livroDigital = new LivroDigital();
+        LivroDigital livroDigital = new LivroDigital("Teste");
+        livroDigital.setTitulo("Senhor dos anéis");
         //livroDigital.
 
+        RegistroVendas carrinho = new RegistroVendas();
+        carrinho.adicionar(favorito);
+        carrinho.adicionar(meuLivro);
+        carrinho.adicionar(livroDigital);
 
     }
 }
