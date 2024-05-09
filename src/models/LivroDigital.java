@@ -22,6 +22,12 @@ public class LivroDigital extends Livro {
         super(titulo, autor, valor, editora, paginas, resumo);
         this.marcaDagua = marcaDagua;
     }
+
+    @Override
+    public double getPreco() {
+        return super.valor;
+    }
+
     @Override
     public String exibirDados(){
        return super.exibirDados() +

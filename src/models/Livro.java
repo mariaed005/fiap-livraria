@@ -2,7 +2,7 @@ package models;
 
 import models.Editora;
 
-public abstract class Livro {
+public abstract class Livro implements Exemplar{
 
     //---ATRIBUTOS ---///
     //+ (public) TipoDado nomeAtributoOuVariavel

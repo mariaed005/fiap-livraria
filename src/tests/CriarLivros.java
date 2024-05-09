@@ -1,9 +1,6 @@
 package tests;
 
-import models.Editora;
-import models.LivroDigital;
-import models.LivroFisico;
-import models.RegistroVendas;
+import models.*;
 import models.enums.TipoCapaEnum;
 
 //Classe de execução => main
@@ -41,10 +38,18 @@ public class CriarLivros {
         livroDigital.setTitulo("Senhor dos anéis");
         //livroDigital.
 
+        Revista sql = new Revista();
+        sql.setCategoria("Banco de Dados");
+        sql.setEditora(editora);
+        sql.setPreco(25);
+        sql.setTitulo("SQL Magazine - v25");
+
         RegistroVendas carrinho = new RegistroVendas();
         carrinho.adicionar(favorito);
         carrinho.adicionar(meuLivro);
         carrinho.adicionar(livroDigital);
+        carrinho.adicionar(sql);
+        carrinho.exibir();
 
     }
 }

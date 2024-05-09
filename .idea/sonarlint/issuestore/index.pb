@@ -1,16 +1,4 @@
 
-@
-src/Editora.java,a\1\a16dee05d1593b50fb6daaf685c5188ab07c91f2
-E
-src/LivroDigital.java,9\9\99507323a2d7bd558f5f092c476f44e626786c34
->
-src/Livro.java,7\a\7a691ad67a83ac177bb68a623a61ceab0bcbd26d
-D
-src/LivroFisico.java,1\1\112b821777a5101bd8b12e6f6cf7909396031011
-D
-src/CriarLivros.java,6\f\6fcc2646a663b0601bdc51698f8116e857862a40
-C
-src/LivroBolso.java,c\e\ce5c88640088c28d04a23347a6a071a6b2426942
 J
 src/tests/CriarLivros.java,f\c\fcb43e1ff744d64aa675fc1d7b9b6e91b42569b5
 G
@@ -29,3 +17,9 @@ L
 src/models/LivroRevista.java,7\0\705a397dd643602d92cf47b10a71ff181beb3c4c
 J
 src/models/LivroAudio.java,d\c\dc56ad75c43effc312acce30ec2eaacc63e7c9c1
+H
+src/models/Exemplar.java,4\1\41aeefcf74c5f2a0e1642595aa27a9c9195c0e6f
+R
+"src/models/enums/TipoCapaEnum.java,3\2\320550c556a0801e829e62bde13d77f054835099
+G
+src/models/Revista.java,b\5\b590e554d950bef94b77b3e725d8de593f14c4c8

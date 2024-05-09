@@ -17,6 +17,11 @@ public class LivroFisico extends Livro{
         return valor * 0.05;
     }
 
+    @Override
+    public double getPreco() {
+        return super.valor;
+    }
+
     public String exibirDados(){
          return super.exibirDados() +
                  "\nTaxa de Impressão:" + this.getTaxaImpressao() +
