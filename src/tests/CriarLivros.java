@@ -3,9 +3,11 @@ package tests;
 import models.*;
 import models.enums.TipoCapaEnum;
 
+import java.io.IOException;
+
 //Classe de execução => main
 public class CriarLivros {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //Instanciando um objeto => criar o objeto na memória
         // tipoObjeto nomeObjeto = operadorInstanciação  construtor;
         //   models.Livro      favorito =       new               models.Livro();
@@ -50,6 +52,8 @@ public class CriarLivros {
         carrinho.adicionar(livroDigital);
         carrinho.adicionar(sql);
         carrinho.exibir();
+        String path = "C:\\Users\\logonpflocal\\Downloads\\fiap-livraria\\Cupom.txt";
+        carrinho.imprimirCupom2(path);
 
     }
 }
